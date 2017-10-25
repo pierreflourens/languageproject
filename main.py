@@ -22,6 +22,7 @@ def create_word():
 @app.route('/get_word')
 def get_word():
     word = request.args.get('english')
+    #blablabla
 
     word_object = PierreWord.query(PierreWord.english==word).get()
 
